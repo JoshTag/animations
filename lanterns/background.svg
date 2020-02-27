@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="689px" viewBox="0 0 1024 689" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="49.9999914%" cy="100%" fx="49.9999914%" fy="100%" r="103.873067%" gradientTransform="translate(0.500000,1.000000),scale(0.672852,1.000000),rotate(-90.000000),scale(1.000000,1.457018),translate(-0.500000,-1.000000)" id="radialGradient-1">
+            <stop stop-color="#3F51B1" offset="0%"></stop>
+            <stop stop-color="#5A55AE" offset="30.6027207%"></stop>
+            <stop stop-color="#7B5FAC" offset="50.3925274%"></stop>
+            <stop stop-color="#8F6AAE" offset="62.9690033%"></stop>
+            <stop stop-color="#A86AA4" offset="73.7335735%"></stop>
+            <stop stop-color="#CC6B8E" offset="87.4536555%"></stop>
+            <stop stop-color="#F18271" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" fill="url(#radialGradient-1)">
+            <rect id="background" x="0" y="0" width="1024" height="689"></rect>
+        </g>
+    </g>
+</svg>

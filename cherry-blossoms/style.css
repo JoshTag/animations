@@ -1,0 +1,115 @@
+body {
+  background: rgb(171,239,251);
+  background: linear-gradient(rgb(15, 179, 255), rgb(255, 225, 198));
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.petal {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  z-index: 150;
+}
+
+.petal .rotate {
+  animation: driftyRotate 1s infinite both ease-in-out;
+  perspective: 1000;
+}
+
+.petal .skewing {
+  transform: skewY(10deg);
+  width: 2rem;
+  height: 2rem;
+  animation: drifty 1s infinite alternate both ease-in-out;
+  perspective: 1000;
+  color: #ea8ee0;
+}
+
+.petal:nth-of-type(7n) .skewing {
+  animation-delay: -.31s;
+  animation-duration: 3.15s;
+}
+.petal:nth-of-type(7n + 1) .skewing {
+  animation-delay: -.89s;
+  animation-duration: 2.5s;
+}
+.petal:nth-of-type(7n + 2) .skewing {
+  animation-delay: -.70s;
+  animation-duration: 3.95s;
+}
+.petal:nth-of-type(7n + 3) .skewing {
+  animation-delay: -.63s;
+  animation-duration: 4.85s;
+}
+.petal:nth-of-type(7n + 4) .skewing {
+  animation-delay: -.34s;
+  animation-duration: 3.1s;
+}
+.petal:nth-of-type(7n + 5) .skewing {
+  animation-delay: -.41s;
+  animation-duration: 3.23s;
+}
+.petal:nth-of-type(7n + 6) .skewing {
+  animation-delay: -.64s;
+  animation-duration: 6.1s;
+}
+.petal:nth-of-type(7n + 7) .skewing {
+  animation-delay: -.76s;
+  animation-duration: 5.34s;
+}
+
+
+.petal:nth-of-type(5n) .rotate {
+  animation-duration: 4.3s;
+}
+.petal:nth-of-type(5n + 1) .rotate {
+  animation-duration: 3.8s;
+}
+.petal:nth-of-type(5n + 2) .rotate {
+  animation-duration: 2.3s;
+}
+.petal:nth-of-type(5n + 3) .rotate {
+  animation-duration: 4.75s;
+}
+.petal:nth-of-type(5n + 4) .rotate {
+  animation-duration: 5.3s;
+}
+.petal:nth-of-type(5n + 5) .rotate {
+  animation-duration: 3.05s;
+}
+.petal:nth-of-type(5n + 6) .rotate {
+  animation-duration: 8.76s;
+}
+.petal:nth-of-type(5n + 7) .rotate {
+  animation-duration: 4.6s;
+}
+.petal:nth-of-type(5n + 8) .rotate {
+  animation-duration: 5.78s;
+}
+
+/* skews and shifts petals left and right */
+@keyframes drifty {
+  0% {
+    transform: skewY(10deg) translate3d(-250%, 0, 0);
+  }
+  100% {
+    transform: skewY(-12deg) translate3d(250%, 0, 0);
+  }
+}
+
+/* rotates petals */
+@keyframes driftyRotate {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(359deg);
+  }
+}
