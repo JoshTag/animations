@@ -97,10 +97,10 @@ body {
 /* skews and shifts petals left and right */
 @keyframes drifty {
   0% {
-    transform: skewY(10deg) translate3d(-250%, 0, 0);
+    transform: skewY(10deg) translateX(-250%);
   }
   100% {
-    transform: skewY(-12deg) translate3d(250%, 0, 0);
+    transform: skewY(-12deg) translateX(250%);
   }
 }
 

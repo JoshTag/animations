@@ -13,5 +13,6 @@ body {
   width: 350px;
   position: absolute;
   bottom: 10vh;
-  left: 60vw;
+  left: 50vw;
+  transform: translateX(-50%)
 }
