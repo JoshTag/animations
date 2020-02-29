@@ -1,6 +1,7 @@
 body {
-  background-image: url("./background.svg");
-  background-size: cover;
+  /* background-image: url("./assets/background.svg");
+  background-size: cover; */
+  background-image: radial-gradient(ellipse at bottom, #3F51B1 0%, #5A55AE 18%, #7B5FAC 40%, #8F6AAE 56%, #A86AA4 69%, #CC6B8E 83%, #F18271 100%);
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -10,9 +11,42 @@ body {
 }
 
 .boat {
-  width: 350px;
+  width: 15vw;
   position: absolute;
-  bottom: 10vh;
+  bottom: 5vh;
   left: 50vw;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.water {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+}
+
+.hill {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 8;
+}
+
+/* .lantern-container {
+  position: relative;
+} */
+
+.lanterns {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  transform-origin: 50% 80%;
+  z-index: 20;
+}
+
+.lantern-img {
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 1rem rgb(253, 204, 113));
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="139px" viewBox="0 0 95 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>lantern</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="246.635218%" gradientTransform="translate(0.500000,0.000000),scale(1.000000,0.639344),rotate(90.000000),scale(1.000000,1.155164),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#FC8300" offset="0%"></stop>
+            <stop stop-color="#FFF07F" offset="100%"></stop>
+        </radialGradient>
+        <path d="M10.9649867,21.4786602 C22.9742308,4.8404466 73.4231039,4.8404466 85.3275119,21.4786602 C87.557496,33.76386 87.557496,67.2709733 85.3275119,122 C68.7109752,128 56.1018046,131 47.5,131 C38.8981954,131 26.7198577,128 10.9649867,122 C8.34500443,66.9025759 8.34500443,33.3954626 10.9649867,21.4786602 Z" id="path-2"></path>
+        <filter x="-19.8%" y="-13.5%" width="139.7%" height="125.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="-1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.729348776   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="-35.6893282%" x2="50%" y2="90.5287539%" id="linearGradient-4">
+            <stop stop-color="#FC8300" offset="0%"></stop>
+            <stop stop-color="#FFF07F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.4747677%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFEF4E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="lantern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+        <ellipse id="Oval" fill="url(#linearGradient-4)" cx="48" cy="121" rx="37" ry="10"></ellipse>
+        <path d="M47.5,127.99373 C51.9027453,127.99373 50.9023316,128.35449 50.9023316,123.603119 C50.9023316,118.851747 49.3790558,115 47.5,115 C45.6209442,115 44.0976684,118.851747 44.0976684,123.603119 C44.0976684,128.35449 43.0972547,127.99373 47.5,127.99373 Z" id="Oval" fill="url(#linearGradient-5)"></path>
+    </g>
+</svg>
