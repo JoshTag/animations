@@ -9,7 +9,7 @@ function fallingPetals() {
 
   petal.forEach(p => {
     p.innerHTML = '<div class="rotate"><img src="petal.svg" class="skewing"/></div>';
-    let scale = Math.random() * .8 + .2;
+    let scale = Math.random() * .8 + .3;
     let i = Math.floor(Math.random() * Math.floor(petal.length))
 
     p.animate([

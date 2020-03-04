@@ -1,0 +1,71 @@
+// CSS Reset
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2e2e;
+} 
+
+
+// Media Queries
+
+// Tablet up
+@mixin tablet {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
+
+// Desktop small up
+@mixin laptop {
+  @media (min-width: 64rem) {
+    @content;
+  }
+}
+
+// Desktop large up
+@mixin desktop {
+  @media (min-width: 90rem) {
+    @content;
+  }
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 280px;
+  @media (min-width: 48rem) {
+    width: 420px;
+  }
+}
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 48rem) {
+    margin-top: 70px;
+  }
+
+  & h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+
+  & li {
+    text-align: center;
+    margin-bottom: 10px;
+
+    & a {
+      text-decoration: underline;
+    }
+
+    & a:hover {
+      cursor: pointer;
+    }
+  }
+}

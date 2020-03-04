@@ -19,7 +19,7 @@ body {
 }
 
 .petal .rotate {
-  animation: driftyRotate 1s infinite both ease-in-out;
+  animation: driftyRotate 2s infinite both ease-in-out;
   perspective: 1000;
 }
 

@@ -1,7 +1,7 @@
 const animateLanterns = () => {
   let container = document.querySelector(".lantern-container");
 
-  for (i = 0; i < 150; i++) {    
+  for (i = 0; i < 175; i++) {    
     let lantern = document.createElement("div");
     lantern.classList.add("lanterns");
     container.append(lantern);
@@ -14,7 +14,7 @@ const animateLanterns = () => {
     lanternImg.setAttribute("src", "./assets/lantern.svg");
     lanterImgContainer.append(lanternImg);
 
-    let scale = Math.random() * .3 + .5;
+    let scale = Math.random() * .3 + .4;
     let start = Math.floor(Math.random() * (55 - 40) + 40);
     let end = Math.floor(Math.random() * (115 - -15) + -15);
     console.log(scale)
@@ -32,9 +32,9 @@ const animateLanterns = () => {
 
     lanterImgContainer.animate([
       { transform: `rotate(0deg)`},
-      { transform: `rotate(-5deg)`},
+      { transform: `rotate(-7deg)`},
       { transform: `rotate(0deg)`},
-      { transform: `rotate(5deg)`},
+      { transform: `rotate(7deg)`},
       { transform: `rotate(0deg)`}
     ],{
       duration: rotate,
