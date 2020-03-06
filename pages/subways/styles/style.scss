@@ -61,3 +61,12 @@ body {
     transform: translateX(120vw)
   }
 }
+
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  text-decoration: underline;
+  color: #000;
+}
