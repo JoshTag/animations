@@ -1,7 +1,16 @@
 body {
   /* background-image: url("./assets/background.svg");
   background-size: cover; */
-  background-image: linear-gradient(0deg, #3F51B1 0%, #5A55AE 18%, #7B5FAC 40%, #8F6AAE 56%, #A86AA4 69%, #CC6B8E 83%, #F18271 100%);
+  background-image: linear-gradient(
+    180deg,
+    #3f51b1 0%,
+    #5a55ae 15%,
+    #7b5fac 35%,
+    #8f6aae 55%,
+    #a86aa4 70%,
+    #cc6b8e 83%,
+    #f18271 100%
+  );
   position: relative;
   overflow: hidden;
   height: 100vh;

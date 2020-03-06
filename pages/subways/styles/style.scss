@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+@mixin tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: 3rem 0 3rem;
+  }
+  
+  &__map-card {
+    width: 280px;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+    margin: 20px 0;
+    border-radius: 5px;
+    @include tablet {
+      width: 50%;
+      margin: 5% 0;
+      padding: 0 40px 40px;
+    }
+  }
+
+  &__map-title {
+    margin: 20px 0;
+  }
+}
+
+.train-container {
+  overflow: hidden;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.train-img {
+  width: 400px;
+  animation: train 5s linear infinite;
+}
+
+@keyframes train {
+  from {
+    transform: translateX(-30vw)
+  }
+  to {
+    transform: translateX(120vw)
+  }
+}

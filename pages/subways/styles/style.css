@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  margin: 3rem 0 3rem;
+}
+
+.main__map-card {
+  width: 280px;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+  .main__map-card {
+    width: 50%;
+    margin: 5% 0;
+    padding: 0 40px 40px;
+  }
+}
+
+.main__map-title {
+  margin: 20px 0;
+}
+
+.train-container {
+  overflow: hidden;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.train-img {
+  width: 400px;
+  -webkit-animation: train 5s linear infinite;
+          animation: train 5s linear infinite;
+}
+
+@-webkit-keyframes train {
+  from {
+    -webkit-transform: translateX(-30vw);
+            transform: translateX(-30vw);
+  }
+  to {
+    -webkit-transform: translateX(120vw);
+            transform: translateX(120vw);
+  }
+}
+
+@keyframes train {
+  from {
+    -webkit-transform: translateX(-30vw);
+            transform: translateX(-30vw);
+  }
+  to {
+    -webkit-transform: translateX(120vw);
+            transform: translateX(120vw);
+  }
+}
+/*# sourceMappingURL=style.css.map */
